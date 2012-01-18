@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>KPOP</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<div class="header">
+	<input type="text" id="searchKey"/>
+	<button id="btnSearch">Search</button>
+	<button id="btnAdd">New Artist</button>
+</div>
+
+
+<div class="leftArea">
+<ul id="ArtistList"></ul>
+</div>
+
+<form id="ArtistForm">
+	
+<div class="mainArea">
+
+<label>Id:</label>
+<input id="ArtistId" name="id" type="text" disabled />
+
+<label>Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label>Top Album:</label>
+<input type="text" id="topalbum" name="topalbum"/>
+
+<label>Debut:</label>
+<input type="text" id="debut" name="debut"/>
+
+<label>Top Single:</label>
+<input type="text" id="topsingle" name="topsingle"/>
+
+<label>Year:</label>
+<input type="text" id="year" name="year"/>
+
+<button id="btnSave">Save</button>
+<button id="btnDelete">Delete</button>
+
+</div>
+
+<div class="rightArea">
+
+<img id="pic" height="300"/>
+
+<label>Notes:</label>
+<textarea id="description" name="description"></textarea>
+</div>
+
+</form>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
