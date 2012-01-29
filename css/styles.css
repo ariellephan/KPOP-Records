@@ -50,8 +50,8 @@ li a {
 }
 
 li a:hover {
-	background-color: #4B0A1E;
-	color: #BA8A92;
+	background-color: #C38EC7;
+	color: #fff;
 }
 
 input, textarea {
@@ -84,4 +84,142 @@ button {
 
 #searchKey {
 	width:160px;
+}
+
+#button_bar div{
+	float:left;
+	margin-right:5px;	
+}
+
+#button_bar{
+	float:left;
+	margin-bottom:10px;
+}
+
+#PagePlayerWrapper{
+	width:90%;
+	margin-left:0%;
+	margin-top:5%;
+	border: 2px outset #ccc;
+	padding:10px;
+}
+#PagePlayerList{
+	width:40%;
+	float:left;
+}
+#PagePlayerList h3{
+	font-size:12px;
+	padding:0px;
+	margin:0px;
+	}
+#PagePlayerDescription{
+	overflow:auto;
+	position:relative;
+	float:right;
+	width:55%;
+	border:2px solid #999;
+	padding:2px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+#PagePlayerListDescWrapper{
+	clear:both;
+}
+
+
+.PagePlayerListItemSelected{
+	margin-bottom:1px;
+	border:2px solid #999;
+	padding:2px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.PagePlayerListItem{
+	color:white;
+	margin-bottom:1px;
+	border:2px solid #666;
+	background-color:#999;
+	padding:2px;
+	font-size:12px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.PagePlayerListItem h3{
+
+	cursor:pointer;
+}
+
+
+
+#volume_control{
+	width:20%;
+	height:15px;
+	border: 2px solid #FCDFFF;
+	float:left;
+}
+
+#volume_background{
+	width:100%;
+	height:15px;
+	background-color:#FCDFFF;
+}
+
+#volume_bar{
+	width:0px;
+	height:15px;
+	background-color:#999;
+	opacity:0.4;	
+}
+
+#duration{
+	width:100%;
+	height:15px;
+	border: 2px solid #999;
+	margin-bottom:5px;
+}
+
+#duration_background{
+	width:100%;
+	height:15px;
+	background-color:#ddd;
+}
+
+#duration_bar{
+	width:0px;
+	height:15px;
+	background-color:#50b;
+	opacity:0.4;
+}
+
+.playerbutton{
+	color: black;
+	border: 2px solid #ddd;
+	cursor:pointer;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background:no-repeat center;
+    height:20px;
+}
+
+/* add the images to the backgrounds of the buttons */
+#play{
+	background-image:url("../images/play.png");
+	width:20px;
+}
+
+#pause{
+	background-image:url("../images/pause.png");
+	width:20px;
+	display:none;
+}
+
+#previous{
+	background-image:url("../images/previous.png");
+	width:25px;
+}
+
+#next{
+	background-image:url("../images/next.png");
+	width:25px;
 }

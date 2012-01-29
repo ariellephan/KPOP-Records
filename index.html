@@ -2,10 +2,11 @@
 <html>
 <head>
 <title>KPOP</title>
+<script src="PagePlayer.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body onload="onPagePlayerLoad();" onresize="PagePlayerSetDescriptionHeight();">
 
 <div class="header">
 	<input type="text" id="searchKey"/>
@@ -21,9 +22,6 @@
 <form id="ArtistForm">
 	
 <div class="mainArea">
-
-<label>Id:</label>
-<input id="ArtistId" name="id" type="text" disabled />
 
 <label>Name:</label>
 <input type="text" id="name" name="name" required>
@@ -48,10 +46,37 @@
 <div class="rightArea">
 
 <img id="pic" height="300"/>
+	<ul id="PagePlayer">
+		<li>
+			<h3>Lovey Dovey - T-ara</h3>
+			<p>Current chart topping single of Jan 2012</p>
+			<a href="audio/winter_magic.ogg">Download</a>
+		</li>
+		<li>
+			<h3>Roly Poly - T-ara</h3>
+			<p>The 80s got revived.</p>
+			<a href="audio/roly_poly.ogg">Download</a>
+		</li>
+		<li>
+			<h3>Winter Magic - KARA</h3>
+			<p>By KARA</p>
+			<a href="audio/winter_magic.ogg">Download</a>
+		</li>	
+		<li>
+			<h3>Goodbye Baby - Miss A</h3>
+			<p>Comeback single after 1 year</p>
+			<a href="audio/goodbye_baby.ogg">Download</a>
+		</li>
+	</ul>
+<script type="text/javascript">
+	//set some PagePlaer variables
+	audio_volume=0.85; //default is 0.7
+	autoplay=true;
+	PagePlayer("PagePlayer");
+</script>	
 
-<label>Notes:</label>
-<textarea id="description" name="description"></textarea>
 </div>
+
 
 </form>
 
